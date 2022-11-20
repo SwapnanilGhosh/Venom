@@ -1,0 +1,62 @@
+<section>
+    <div class="row hero up" >
+       <div class="col-lg-3">
+ </div>
+ <div class="col-lg-1">
+ </div>
+ <div class="col-lg-4">
+    <h1>Pinksale Presale Active!</h1> 
+ </div>
+ <div class="col-lg-1">
+ </div>
+ <div class="col-lg-3">
+ </div>
+ </div>
+    <div class="row hero upper-top" >
+       <div class="col-lg-2">
+ </div>
+ <div class="col-lg-1 icons-border glowing-circle">
+    <img src="assets/img/uni.png" class= "icons">
+ </div>
+ <div class="col-lg-6">
+ </div>
+ <div class="col-lg-1 icons-border glowing-circle" >
+    <img src="assets/img/dext.png" class= "icons">
+ </div>
+ <div class="col-lg-2">
+ </div>
+ </div>
+       </div>
+    </div>
+</header>
+<div class="row hero upper" >
+ <div class="col-lg-1">
+ </div>
+ <div class="col-lg-1 icons-border">
+    <img src="assets/img/tg.png" class= "icons">
+ </div>
+ <div class="col-lg-8">
+ </div>
+ <div class="col-lg-1 icons-border">
+    <img src="assets/img/twitter.png" class= "icons">
+ </div>
+ <div class="col-lg-1">
+ </div>
+ </div>
+</div>
+<div class="row hero lower">
+ <div class="col-lg-2">
+ </div>
+ <div class="col-lg-1 icons-border">
+    <img src="assets/img/pink-2.png" class= "icons">
+ </div>
+ <div class="col-lg-6">
+ </div>
+ <div class="col-lg-1 icons-border" >
+    <img src="assets/img/github-logo.png" class= "icons">
+ </div>
+ <div class="col-lg-2">
+ </div>
+ </div>
+</div>
+</section>
