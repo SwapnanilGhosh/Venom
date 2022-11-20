@@ -113,7 +113,7 @@
     /**
      * Mobile nav dropdowns activate
      */
-    on('click', '.navbar .dropdown > a', function(e) {
+    on('click', '.sidenav .dropdown > a', function(e) {
         if (select('#sidenav').classList.contains('navbar-mobile')) {
             e.preventDefault()
             this.nextElementSibling.classList.toggle('dropdown-active')
@@ -293,4 +293,13 @@ function DisplayWallet() {
         x.style.display = "none";
     }
 }
-
+function showmenu()
+{
+    var x = document.getElementById('sidenav');
+    var y = document.getElementById('logo-img-mob');
+    if (x.style.display == 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
