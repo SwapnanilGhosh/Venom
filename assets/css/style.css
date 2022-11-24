@@ -199,6 +199,17 @@ section {
 }
 
 @media (max-width: 1365px) {
+    .sidenav {
+        display: none;
+     }
+
+    .left-banner {
+    }
+
+    .main-anim {
+        
+    }
+
    .header .logo-button {
     margin-left: 0;
     
@@ -858,12 +869,15 @@ video {
     }
     
     .btn-left {
-        float: right;
+        float: left;
     }
     
     .btn-right {
         transform: translateY(-100%);
         float: right;
+    }
+    .left-banner{
+        margin-top: 30px;
     }
     .main-button {
     }
