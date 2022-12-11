@@ -34,7 +34,7 @@
     /**
      * Navbar links active state on scroll
      */
-    let navbarlinks = select('#sidenav .scrollto', true)
+    let navbarlinks = select('#navbar .scrollto', true)
     const navbarlinksActive = () => {
         let position = window.scrollY + 200
         navbarlinks.forEach(navbarlink => {
@@ -105,7 +105,7 @@
      * Mobile nav toggle
      */
     on('click', '.mobile-nav-toggle', function(e) {
-        select('#sidenav').classList.toggle('navbar-mobile')
+        select('#navbar').classList.toggle('navbar-mobile')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x')
     })
@@ -113,8 +113,8 @@
     /**
      * Mobile nav dropdowns activate
      */
-    on('click', '.sidenav .dropdown > a', function(e) {
-        if (select('#sidenav').classList.contains('navbar-mobile')) {
+    on('click', '.navbar .dropdown > a', function(e) {
+        if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
             this.nextElementSibling.classList.toggle('dropdown-active')
         }
@@ -127,7 +127,7 @@
         if (select(this.hash)) {
             e.preventDefault()
 
-            let navbar = select('#sidenav')
+            let navbar = select('#navbar')
             if (navbar.classList.contains('navbar-mobile')) {
                 navbar.classList.remove('navbar-mobile')
                 let navbarToggle = select('.mobile-nav-toggle')
@@ -295,7 +295,7 @@ function DisplayWallet() {
 }
 function showmenu()
 {
-    var x = document.getElementById('sidenav');
+    var x = document.getElementById('navbar');
     var y = document.getElementById('logo-img-mob');
     if (x.style.display == 'block') {
         x.style.display = 'none';

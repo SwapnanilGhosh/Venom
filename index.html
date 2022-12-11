@@ -21,7 +21,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-      <link href="http://fonts.cdnfonts.com/css/alien-league-2" rel="stylesheet">  
+      <link href="http://fonts.cdnfonts.com/css/alien-league-2" rel="stylesheet"> 
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
       <!-- Vendor CSS Files --->        
       <link rel="preload" href="assets/img/venom_loop.mp4" as="background-video">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -41,25 +42,37 @@
       <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
    </head>
-   <body>
-      <video src="assets/img/venom_loop.mp4" autoplay loop muted playsinline frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen ></video>
+   <body >
+      <video  id="welcome" src="assets/img/venom-main.mp4" autoplay loop muted playsinline frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen ></video>
   
-      <div id="sidenav" class="sidenav">
-            <a class="nav-link scrollto" href="index.html#nft"><img class="logo-img" src="assets/img/logo.png"></a>
-            <a class="nav-link scrollto " href="index.html#hero">Welcome</a>
-            <a class="nav-link scrollto " href="index.html#tokenomics">About Us</a>
-            <a class="nav-link scrollto" href="index.html#feed">Roadmap</a>
-            <a class="nav-link scrollto" href="index.html#nft">Tokenomics</a>
-            <a class="nav-link scrollto" href="index.html#nft">Socials</a>
-            <a class="nav-link scrollto" href="index.html#nft">Contact</a>
-       </div>
+      
        
       <!-- ======= Header ======= -->
      
           <!-- ======= Header ======= -->
       <header id="header" class="header fixed-top no-print">
-         <img id="logo-img-mob" class="logo-img-mob" src="assets/img/logo.png">
+         <img id="logo-img-mob" class="logo-img-mob" src="assets/img/Venom-Logo-Red.png">
          <button class="menu-bar" onclick = 'showmenu();'><i class="bi bi-list mobile-nav-toggle"></i></button>
+         <div class=" container-xl d-flex align-items-center ">
+            <a href="index.html" class="logo d-flex align-items-center">
+            
+            </a>
+            <nav id="navbar" class="navbar">
+               <ul>
+                  <li><a class="nav-link scrollto" href="index.html#hero">HOME</a></li>
+                  <li><a class="nav-link scrollto" href="index.html#tokenomics">MISSION</a></li>
+                  <li><a class="nav-link scrollto" href="index.html#feed">CONTRACT</a></li>
+                  <li><a class="nav-link scrollto" href="index.html#nft">TEAM</a></li>
+                  <li>
+                     <a class="nav-link scrollto" href="index.html#nft">SOCIALS</a>
+                     </li>
+                  
+               </ul>
+
+               <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+         </div>
       </header>
       
       <!-- End Header -->
@@ -103,7 +116,7 @@
    </div>
    
    </section>
-   <section id="tokenomics" class="roadmap counts tokenomics">
+   <section id="roadmap" class="roadmap counts tokenomics">
          
 
          

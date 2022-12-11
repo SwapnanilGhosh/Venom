@@ -199,9 +199,11 @@ section {
 }
 
 @media (max-width: 1365px) {
-    .sidenav {
+    .navbar {
         display: none;
      }
+
+   
 
     .left-banner {
     }
@@ -217,11 +219,12 @@ section {
 }
 
 .logo-img-mob {
+    
     width:80px;
-    margin-left: 10px;
+    margin-left: 5%;
 }
 
-.sidenav .logo-img {
+.navbar .logo-img {
     width:80px;
     margin-left:-5px;
     padding-bottom:10px;
@@ -253,98 +256,7 @@ section {
 
 }
 /** * Desktop Navigation */
-.sidenav {
-    padding: 0;
-    
-}
 
-.sidenav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.sidenav li {
-    
-    position: relative;
-}
-
-.sidenav {
-    height: 100%;
-    width: 100px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    color:#13233f;
-    border-right:solid 2px #13233f;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #13233f;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-    border-right: solid 5px red;
-  }
-  
-  .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-
-.sidenav a:after {    
-    border-right: solid 5px red;
-   
-    
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    height: 100vh;
-    width: 15vw;
-    font-family: raleway;
-    background: transparent;
-  }
-  
-
-.sidenav .nav-link:hover:after { 
-    width: 100%; 
-    left: 10px; 
-  }
-
-.sidenav .btn-get-started:hover {
-    border: solid 5px red;
-}
-
-.sidenav a, .sidenav a:focus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px 4px ;
-    font-family: "Nunito", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: #43526d;
-    white-space: nowrap;
-    transition: 0.3s;
-}
 
 .main-anim {
     width:110%
@@ -353,24 +265,47 @@ section {
     width:90%;
 }
 
+.navbar {
+    padding: 0;
+   
+}
 
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
 
+.navbar li {
+    position: relative;
+}
 
-.sidenav a i, .sidenav a:focus i {
+.navbar a, .navbar a:focus {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 030px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
 }
 
-.sidenav a:hover, .sidenav .active, .sidenav .active:focus, .sidenav li:hover > a {
-    color: white;
-    border-right: solid 3px #ecdbf2;
-    
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: red;
 }
 
-
-
-.sidenav .getstarted, .sidenav .getstarted:focus {
+.navbar .getstarted, .navbar .getstarted:focus {
     background: #4154f1;
     padding: 8px 20px;
     margin-left: 30px;
@@ -378,60 +313,59 @@ section {
     color: #fff;
 }
 
-.sidenav .getstarted:hover, .sidenav .getstarted:focus:hover {
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
     color: #fff;
-    background: white;
+    background: #5969f3;
 }
 
-.sidenav .dropdown ul {
+.navbar .dropdown ul {
     display: block;
     position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
     margin: 0;
+    padding: 10px 0;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: transparent;
-    border: solid transparent;
-   
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
 }
 
-.sidenav .dropdown ul li {
+.navbar .dropdown ul li {
     min-width: 200px;
-    
 }
 
-.sidenav .dropdown ul a {
+.navbar .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
-    border-radius: 30px;
 }
 
-.sidenav .dropdown ul a i {
+.navbar .dropdown ul a i {
     font-size: 12px;
 }
 
-.sidenav .dropdown ul a:hover, .sidenav .dropdown ul .active:hover, .sidenav .dropdown ul li:hover > a {
-    color: #4154f1;
-    border-radius: 30px;
-    background-color: transparent;
-    width: 75%;
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: red;
 }
 
-.sidenav .dropdown:hover > ul {
+.navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
 }
 
-.sidenav .dropdown .dropdown ul {
+.navbar .dropdown .dropdown ul {
     top: 0;
     left: calc(100% - 30px);
     visibility: hidden;
 }
 
-.sidenav .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -439,15 +373,14 @@ section {
 }
 
 @media (max-width: 1366px) {
-    .sidenav .dropdown .dropdown ul {
+    .navbar .dropdown .dropdown ul {
         left: -90%;
     }
 
-    .sidenav .dropdown .dropdown:hover > ul {
+    .navbar .dropdown .dropdown:hover > ul {
         left: -100%;
     }
 }
-
 /** * Mobile Navigation */
 .mobile-nav-toggle {
     color: #ffffff;
@@ -463,42 +396,32 @@ section {
     color: #fff;
 }
 
-@media (max-width: 1365px) {
-    .mobile-nav-toggle {
-        display: block;
-    }
+@media (max-width: 991px) {
+    
 
-    .sidenav ul {
+    .navbar ul {
         display: none;
-    }
-    .sidenav .btn-get-started {
-        border: none !important;
-    }
-    .sidenav .nav-link:hover:after {
-        width: 0%;
     }
 }
 
-.sidenav-mobile {
+.navbar-mobile {
     position: fixed;
     overflow: hidden;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    width: 80%;
-    transform: translateX(-50%);
-    background: transparent;
+    background: rgba(1, 22, 61, 0.9);
     transition: 0.3s;
 }
 
-.sidenav-mobile .mobile-nav-toggle {
+.navbar-mobile .mobile-nav-toggle {
     position: absolute;
     top: 15px;
     right: 15px;
 }
 
-.sidenav-mobile ul {
+.navbar-mobile ul {
     display: block;
     position: absolute;
     top: 55px;
@@ -512,21 +435,21 @@ section {
     transition: 0.3s;
 }
 
-.sidenav-mobile a, .sidenav-mobile a:focus {
+.navbar-mobile a, .navbar-mobile a:focus {
     padding: 10px 20px;
-    font-size: 28px;
+    font-size: 15px;
     color: #012970;
 }
 
-.sidenav-mobile a:hover, .sidenav-mobile .active, .sidenav-mobile li:hover > a {
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
     color: red;
 }
 
-.sidenav-mobile .getstarted, .sidenav-mobile .getstarted:focus {
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
     margin: 15px;
 }
 
-.sidenav-mobile .dropdown ul {
+.navbar-mobile .dropdown ul {
     position: static;
     display: none;
     margin: 10px 20px;
@@ -538,32 +461,30 @@ section {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-.sidenav-mobile .dropdown ul li {
+.navbar-mobile .dropdown ul li {
     min-width: 200px;
 }
 
-.sidenav-mobile .dropdown ul a {
+.navbar-mobile .dropdown ul a {
     padding: 10px 20px;
 }
 
-.sidenav-mobile .dropdown ul a i {
+.navbar-mobile .dropdown ul a i {
     font-size: 12px;
 }
 
-.sidenav-mobile .dropdown ul a:hover, .sidenav-mobile .dropdown ul .active:hover, .sidenav-mobile .dropdown ul li:hover > a {
-    color: #4154f1;
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+    color: red;
 }
 
-.sidenav-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
     display: block;
 }
 /*-------------------------------------------------------------- # Hero Section --------------------------------------------------------------*/
 video {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
-  margin-bottom:100px;
-    top: 0;
     left: 0;
   }
   
@@ -650,11 +571,21 @@ video {
     .modal-fullscreen .modal-dialog {
         width: 970px;
    }
+   .mobile-nav-toggle {
+    display: block;
+   }
+   
 }
+
+
 @media (min-width: 1200px) {
     .modal-fullscreen .modal-dialog {
         width: 100%;
    }
+   .navbar {
+    margin-top: -80px;
+   }
+   
 }
 .hero {
     width: 100%;
@@ -882,7 +813,7 @@ video {
     .main-button {
     }
 
-    .sidenav {
+    .navbar {
        display: none;
     }
 
@@ -890,11 +821,13 @@ video {
         margin: 0;
     }
     .main-anim {
+        display: none;
         margin-top: 50px;
         margin: 0;
         width: 100%;
     }
     .main-anim1 {
+        display: none;
         margin: 0;
         width: 100%;
     }
@@ -1040,6 +973,14 @@ ol {
     .roadmap-text {
         margin-left: -10px;
     }
+   
+   
+}
+
+@media screen and (min-width: 1165px) {
+    .mobile-nav-toggle {
+        display: none;
+       }
 }
 
 .roadmap-button {
