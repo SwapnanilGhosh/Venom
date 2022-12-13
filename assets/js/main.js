@@ -297,9 +297,9 @@ function showmenu()
 {
     var x = document.getElementById('navbar');
     var y = document.getElementById('logo-img-mob');
-    if (x.style.display == 'block') {
-        x.style.display = 'none';
-    } else {
+    
+        x.style.display = 'block';
+     if (x.style.display == 'none') {
         x.style.display = 'block';
     }
 }
