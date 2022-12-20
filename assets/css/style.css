@@ -809,23 +809,7 @@ video {
    
 }
 
-@media (min-width: 1700px) {
 
-    .main-anim{
-        width: 120%;
-    }
-    .main-anim1{
-        width: 120%;
-    }
-    .logo-banner{
-        width: 120%;
-    }
-    .logo-banner1{
-        width: 120%;
-    }
-
-
-}
 
 
 @media (max-width: 991px) {
@@ -1057,6 +1041,24 @@ ol {
        }
 
        
+}
+@media screen and (min-width: 1470px) {
+
+    .tokenomics{
+        transform: scale(1.3);
+        margin-top: 150px;
+    }
+    .roadmap{
+        transform: scale(1.3);
+    }
+    .navbar {
+        transform: scale(1.8);
+    }
+    .logo-img-mob {
+        transform: scale(1.8);
+        margin-top: 50px;
+    }
+
 }
 
 .roadmap-button {
