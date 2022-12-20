@@ -4,8 +4,10 @@
 }
 /* width */
 ::-webkit-scrollbar {
+    display: none;
     width: 5px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: black;
@@ -184,14 +186,20 @@ section {
 .logo-banner {
     width:130%;
     margin-top:-100px;
-    margin-left:-40px
+    margin-left:-50px;
 }
 .logo-banner1{
     width:130%;
-    
-    margin-left:-40px;
+    font-family: 'Alien League';
+    font-size: 72px;
+    color: white;
+    margin-left:-5px;
     margin-top:100px;
 }
+
+
+
+
 
 
 .header .logo-button {
@@ -257,7 +265,7 @@ section {
 
 
 .main-anim {
-    width:110%
+    width:100%;
 }
 .main-anim1 {
     width:90%;
@@ -491,7 +499,6 @@ section {
 video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     left: 0;
   }
   
@@ -507,6 +514,7 @@ video {
 .modal-body {
     padding: 0;
     margin-left: 10px;
+    
     
 }
 .close {
@@ -548,14 +556,14 @@ video {
     filter: alpha(opacity=97);
 }
 .modal-fullscreen {
-    background: transparent;
+    background: black;
+    
     
 }
 .modal.modal-fullscreen .modal-dialog {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 0;
-    padding: 0;
     max-width: none; 
     background: transparent;
   }
@@ -826,6 +834,18 @@ video {
         padding: 120px 0 60px 0;
         background-size: cover;
     }
+
+    .tokenomics {
+        
+    }
+
+    .logo-banner{
+        margin-top: 20px;
+    }
+#roadmap{
+    margin-top: -200px;
+}
+    
     
     .btn-left {
         float: left;
@@ -853,7 +873,6 @@ video {
         margin: 0;
     }
     .main-anim {
-       display: none;
     }
     .main-anim1 {
        
@@ -862,8 +881,7 @@ video {
         width: 100%;
     }
     
-.logo-banner1{
-    margin-top: -150px;
+
 }
    
     .upper {
@@ -927,6 +945,29 @@ video {
 .tokenomics {
     margin: 5%;
     background-color: black;
+    font-family: "Open Sans", sans-serif;
+}
+.logo-banner2{
+    width:130%;
+    font-family: 'Alien League';
+    font-size: 42px;
+    color: white;
+    margin-top:100px;
+    font-weight: 100 !important;
+}
+.logo-banner3{
+   
+    height: 100%;
+    font-family: 'Alien League';
+    font-size: 155px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-left:-10px !important;
+    margin-top:100px;
+    padding-top: 50px;
+}
+.tokenomics .body-text {
 }
 
 .pinksale {
@@ -1036,7 +1077,8 @@ ol {
 }
 .roadmap-text {
     font-size: 14px;
-    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
     color: #9ab9dd ;
 }
 
